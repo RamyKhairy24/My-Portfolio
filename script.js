@@ -110,9 +110,11 @@ function animateCounter() {
 animateCounter();
 
 // ===== Resume Download =====
-document.getElementById('resumeBtn').addEventListener('click', () => {
-    // Download resume PDF
-    window.location.href = 'resume.pdf';
+// ===== Resume Preview (open modal instead of downloading) =====
+document.getElementById('resumeBtn').addEventListener('click', (e) => {
+    e.preventDefault();
+    const modal = document.getElementById('resumeModal');
+    if (modal) modal.classList.add('show');
 });
 
 // ===== Certificate Modal Functionality =====
@@ -160,6 +162,8 @@ certModals.forEach(modal => {
         }
     });
 });
+
+// (Hover-preview removed per user request)
 
 // ===== Project Case Study (Simple Modal) =====
 const projectDetailsBtns = document.querySelectorAll('.project-details-btn');

@@ -19,10 +19,14 @@
 body.light-mode {
     --dark-bg: #f8f9fa;
     --darker-bg: #ffffff;
-    --card-bg: rgba(0, 0, 0, 0.05);
+    --card-bg: rgba(0, 0, 0, 0.04);
+    /* Softer accent colors for light mode to reduce brightness */
+    --primary: #0aa3b5; /* softer teal */
+    --secondary: #d34b6b; /* muted pink */
+    --accent: #8a63c7; /* softer purple */
     --text-primary: #1a1a1a;
     --text-secondary: #555555;
-    --border-color: rgba(0, 0, 0, 0.1);
+    --border-color: rgba(0, 0, 0, 0.08);
 }
 
 html {
@@ -1026,9 +1030,26 @@ section {
     border: 1px solid var(--border-color);
     border-radius: 15px;
     padding: 2rem;
-    max-width: 500px;
+    max-width: 900px;
+    width: 95%;
     position: relative;
     animation: slideIn 0.3s ease;
+}
+
+/* Make embedded PDF previews larger and readable */
+.pdf-preview {
+    width: 100%;
+    max-width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.pdf-preview iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
 }
 
 .cert-close {
@@ -1359,5 +1380,21 @@ body.light-mode .cert-download-btn {
         width: 45px;
         height: 45px;
         font-size: 1rem;
+    }
+
+    /* Remove large background decorations on small screens to prevent overflow/zoom */
+    .hero::before,
+    .hero::after {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .cert-modal-content {
+        max-width: 95%;
+        padding: 1rem;
+    }
+    .pdf-preview {
+        height: 60vh;
     }
 }
