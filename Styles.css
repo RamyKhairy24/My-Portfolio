@@ -1382,6 +1382,46 @@ body.light-mode .cert-download-btn {
         font-size: 1rem;
     }
 
+    /* Mobile adjustments: reduce large hero fonts and ensure theme toggle is visible */
+    .nav-menu {
+        display: none; /* hide large menu on narrow screens */
+    }
+
+    .theme-toggle {
+        display: flex !important;
+        position: relative;
+        z-index: 1002;
+        margin-left: auto;
+    }
+
+    .hero-text h1,
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    /* Extra-small phones */
+    @media (max-width: 420px) {
+        .hero-text h1,
+        .hero-title {
+            font-size: 1.7rem;
+        }
+        .hero-subtitle {
+            font-size: 0.95rem;
+        }
+        .hero-description {
+            font-size: 0.9rem;
+        }
+    }
+
     /* Remove large background decorations on small screens to prevent overflow/zoom */
     .hero::before,
     .hero::after {
