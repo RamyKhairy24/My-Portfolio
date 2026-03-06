@@ -229,46 +229,56 @@ const formStatus = document.getElementById('formStatus');
 
 contactForm.addEventListener('submit', async function(e) {
     e.preventDefault();
-    
+
     const formData = new FormData(this);
     const name = formData.get('name');
     const email = formData.get('email');
     const subject = formData.get('subject');
     const message = formData.get('message');
-    
+
     // Validation
     if (!name || !email || !subject || !message) {
         formStatus.textContent = 'Please fill all fields';
         formStatus.classList.add('error');
         return;
     }
-    
+
     if (!validateEmail(email)) {
         formStatus.textContent = 'Please enter a valid email';
         formStatus.classList.add('error');
         return;
     }
-    
+
     formStatus.classList.remove('error');
     formStatus.textContent = 'Sending...';
-    
+
     try {
-        // Using Formspree for email (you need to replace YOUR_FORM_ID)
-        // For now, simulate email sending
-        await simulateEmailSend({ name, email, subject, message });
-        
-        formStatus.classList.add('success');
-        formStatus.textContent = '✓ Message sent successfully! I\'ll get back to you soon.';
-        contactForm.reset();
-        
-        setTimeout(() => {
-            formStatus.textContent = '';
-            formStatus.classList.remove('success');
-        }, 5000);
-    } catch (error) {
+        const res = await fetch(contactForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (res.ok) {
+            formStatus.classList.add('success');
+            formStatus.textContent = "✓ Message sent — I'll get back to you soon.";
+            contactForm.reset();
+        } else {
+            const data = await res.json();
+            formStatus.classList.add('error');
+            formStatus.textContent = (data && data.errors) ? data.errors.map(err => err.message).join(', ') : 'Error sending message.';
+        }
+    } catch (err) {
         formStatus.classList.add('error');
-        formStatus.textContent = 'Error sending message. Please try again.';
+        formStatus.textContent = 'Network error — please try again.';
     }
+
+    setTimeout(() => {
+        formStatus.textContent = '';
+        formStatus.classList.remove('success', 'error');
+    }, 6000);
 });
 
 function validateEmail(email) {

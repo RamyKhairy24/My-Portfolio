@@ -576,7 +576,7 @@
             </div>
 
             <div class="contact-form-container">
-                <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xjgabnzb" method="POST">
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Your Name" required>
                     </div>
@@ -589,6 +589,10 @@
                     <div class="form-group">
                         <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                     </div>
+                    <!-- Honeypot to reduce spam -->
+                    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                    <!-- Optional: custom subject shown in email -->
+                    <input type="hidden" name="_subject" value="Portfolio Contact Form">
                     <button type="submit" class="btn btn-primary">Send Message</button>
                     <div id="formStatus" class="form-status"></div>
                 </form>
