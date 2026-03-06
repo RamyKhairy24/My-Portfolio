@@ -277,6 +277,16 @@ body.light-mode .theme-toggle {
     transition: all 0.3s ease;
 }
 
+/* Improve touch targets on mobile devices */
+@media (max-width: 768px) {
+    .btn {
+        padding: 12px 20px;
+        min-height: 44px; /* recommended minimum touch target */
+        font-size: 1rem;
+        border-radius: 12px;
+    }
+}
+
 .btn-primary {
     background: linear-gradient(135deg, var(--primary), var(--accent));
     color: var(--dark-bg);
