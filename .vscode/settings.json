@@ -1,0 +1,9 @@
+{
+  "liveServer.settings.root": "/my-portfolio",
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.useLocalIp": false,
+
+  "livePreview.server.root": "my-portfolio",
+  "livePreview.defaultPreviewPath": "my-portfolio/index.html",
+  "livePreview.openPreviewTarget": "externalBrowser"
+}

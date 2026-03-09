@@ -1044,6 +1044,10 @@ section {
     width: 95%;
     position: relative;
     animation: slideIn 0.3s ease;
+    /* keep modal content scrollable when viewport is small */
+    max-height: calc(100vh - 4rem);
+    overflow: auto;
+    z-index: 2001;
 }
 
 /* Make embedded PDF previews larger and readable */
@@ -1070,6 +1074,7 @@ section {
     cursor: pointer;
     color: var(--text-secondary);
     transition: color 0.3s ease;
+    z-index: 2002;
 }
 
 .cert-close:hover {
