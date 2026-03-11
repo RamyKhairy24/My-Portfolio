@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ramy Khairy - Backend Developer specializing in ASP.NET Core & REST APIs">
+    <meta name="keywords" content="Backend Developer, ASP.NET, C#, REST API, Software Engineer">
+    <meta name="author" content="Ramy Khairy">
+    <meta property="og:title" content="Ramy Khairy | Backend Developer">
+    <meta property="og:description" content="Experienced backend developer building scalable solutions with ASP.NET Core">
+    <meta property="og:type" content="website">
+    <title>Ramy Khairy | Backend Developer & Software Engineer</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home"><span class="logo-bracket">&lt;</span>Ramy<span class="logo-bracket">/&gt;</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#journey" class="nav-link">Journey</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Ramy Khairy</h1>
+                <h2 class="hero-subtitle">Backend Developer & Software Engineer</h2>
+                <p class="hero-description">Crafting scalable, elegant solutions with ASP.NET Core & REST APIs</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="javascript:void(0)" class="btn btn-tertiary" id="resumeBtn">
+                        <i class="fas fa-download"></i> Resume
+                    </a>
+                    
+                </div>
+                <div class="hero-links">
+                    <a href="https://github.com/RamyKhairy24" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/ramykhairy" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:ramykhairybuisness@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-block">
+                    <span class="code-line"><span class="keyword">const</span> <span class="variable">developer</span> = {</span>
+                    <span class="code-line indent">name: <span class="string">"Ramy"</span>,</span>
+                    <span class="code-line indent">skills: [<span class="string">"C#"</span>, <span class="string">"ASP.NET"</span>, <span class="string">"REST APIs"</span>],</span>
+                    <span class="code-line indent">passion: <span class="string">"Building amazing things"</span></span>
+                    <span class="code-line">};</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a Computer Science student at the Arab Academy for Science, Technology & Maritime Transport, driven by a passion for backend development, software architecture, full-stack technologies, and game programming.</p>
+                    <p>I hold an American Diploma and an IELTS certificate, with professional training in Problem Solving, Communication & Presentation Skills, Entity Framework Core, and the Egyptian Standardized Test (EST).</p>
+                    <p>During my internship at CIB Egypt, I designed and developed a complete RESTful API system using C# and ASP.NET Core, applying best practices in clean architecture, repository and service layers, database design, and structured logging.</p>
+                    <p>I'm fluent in C, C++, Python, Java, and JavaScript, and work confidently with Visual Studio Code across various tech stacks. I'm constantly learning, building, and striving to become a well-rounded software engineer who writes clean, efficient, and impactful code.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-target="20">0</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-target="6">0</div>
+                        <div class="stat-label">Languages</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-target="1">0</div>
+                        <div class="stat-label">Internship</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Integration Section -->
+    <section class="github-integration">
+        <div class="container">
+            <h2 class="section-title">GitHub Activity</h2>
+            <p class="github-subtitle">Check out my latest projects and contributions</p>
+            <div class="github-content">
+                <div class="github-card">
+                    <h3><i class="fab fa-github"></i> GitHub Profile</h3>
+                    <p>Explore my repositories, contributions, and coding journey</p>
+                    <a href="https://github.com/RamyKhairy24" target="_blank" class="github-link">
+                        Visit GitHub Profile <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="github-stats">
+                    <div class="github-stat">
+                        <div class="stat-icon"><i class="fas fa-code-branch"></i></div>
+                        <div class="stat-label">Active Developer</div>
+                    </div>
+                    <div class="github-stat">
+                        <div class="stat-icon"><i class="fas fa-star"></i></div>
+                        <div class="stat-label">20+ Repositories</div>
+                    </div>
+                    <div class="github-stat">
+                        <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="stat-label">Consistent Contributions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey/Timeline Section -->
+    <section id="journey" class="journey">
+        <div class="container">
+            <h2 class="section-title">My Journey</h2>
+            <div class="timeline">
+                <!-- Chronological Journey (earliest → latest) -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023</div>
+                        <h3>Secondary School Diploma</h3>
+                        <p class="timeline-desc">Taymour English School</p>
+                        <p class="timeline-detail">American Diploma • GPA: 3.8</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023</div>
+                        <h3>IELTS Academic Certification</h3>
+                        <p class="timeline-desc">British Council</p>
+                        <p class="timeline-detail">Band 6.5 • Issued: July 2023</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023 - Present</div>
+                        <h3>Bachelor of Software Engineering</h3>
+                        <p class="timeline-desc">Arab Academy for Science & Technology</p>
+                        <p class="timeline-detail">Alexandria, Egypt • Expected Graduation: 2027</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">Jun 2025 - Jul 2025</div>
+                        <h3>Software Developer Intern</h3>
+                        <p class="timeline-desc">Commercial International Bank (CIB Egypt)</p>
+                        <p class="timeline-detail">Cairo, Egypt • On-site • 2 months</p>
+                        <ul class="timeline-highlights">
+                            <li>Developed complete RESTful API using C# & ASP.NET Core</li>
+                            <li>Implemented layered architecture & repository pattern</li>
+                            <li>Built & managed SQL Server databases with migrations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">In Progress</div>
+                        <h3>Meta Back-End Developer Professional Certificate</h3>
+                        <p class="timeline-desc">Coursera</p>
+                        <p class="timeline-detail">Comprehensive backend development course</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>IdentityFlow Validator</h3>
+                        <span class="project-tag">C#</span>
+                    </div>
+                    <p>High-performance C# automation engine to analyze authentication recovery workflows across external identity providers.</p>
+                    <div class="project-highlights">
+                        <span class="highlight-tag">HtmlAgilityPack</span>
+                        <span class="highlight-tag">Async/Parallel</span>
+                        <span class="highlight-tag">Serilog</span>
+                    </div>
+                    <p><strong>Highlights:</strong> Heuristic state-detection system, HtmlAgilityPack integration, async/parallel processing</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/RamyKhairy24" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <button class="project-details-btn" data-project="1">Case Study</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Customer-Asset-Management-System</h3>
+                        <span class="project-tag">C# .NET</span>
+                    </div>
+                    <p>Professional-grade backend API developed during CIB internship showcasing enterprise architecture principles.</p>
+                    <div class="project-highlights">
+                        <span class="highlight-tag">Clean Architecture</span>
+                        <span class="highlight-tag">Repository Pattern</span>
+                        <span class="highlight-tag">SQL Server</span>
+                    </div>
+                    <p><strong>Highlights:</strong> Repository pattern, Entity Framework Core, layered architecture, clean code</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/RamyKhairy24" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <button class="project-details-btn" data-project="2">Case Study</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Multithreading Excel Sheet Program</h3>
+                        <span class="project-tag">C#</span>
+                    </div>
+                    <p>C# automation tool for MISDN validation and Excel data processing with advanced multithreading.</p>
+                    <div class="project-highlights">
+                        <span class="highlight-tag">EPPlus</span>
+                        <span class="highlight-tag">Multithreading</span>
+                        <span class="highlight-tag">ClosedXML</span>
+                    </div>
+                    <p><strong>Highlights:</strong> EPPlus, ClosedXML, multithreading, data automation, Excel integration</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/RamyKhairy24" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <button class="project-details-btn" data-project="3">Case Study</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Learning Journey</h3>
+                        <span class="project-tag">Multiple</span>
+                    </div>
+                    <p>Collection of programming exercises, university lab assignments, and self-study scripts focused on core CS concepts.</p>
+                    <div class="project-highlights">
+                        <span class="highlight-tag">Data Structures</span>
+                        <span class="highlight-tag">Algorithms</span>
+                        <span class="highlight-tag">Problem Solving</span>
+                    </div>
+                    <p><strong>Highlights:</strong> Data structures, algorithms, backend concepts, problem-solving, code organization</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/RamyKhairy24" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <button class="project-details-btn" data-project="4">Case Study</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            
+            <!-- Tech Icons -->
+            <div class="tech-icons">
+                <div class="tech-icon" title="C#">
+                    <i class="fab fa-cuttlefish"></i>
+                    <span>C#</span>
+                </div>
+                <div class="tech-icon" title=".NET Core">
+                    <i class="fas fa-rectangle"></i>
+                    <span>.NET</span>
+                </div>
+                <div class="tech-icon" title="SQL Server">
+                    <i class="fas fa-database"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="tech-icon" title="Java">
+                    <i class="fab fa-java"></i>
+                    <span>Java</span>
+                </div>
+                <div class="tech-icon" title="Python">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-icon" title="JavaScript">
+                    <i class="fab fa-js-square"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-icon" title="C++">
+                    <i class="fas fa-plus"></i>
+                    <span>C++</span>
+                </div>
+                <div class="tech-icon" title="Git">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+                <div class="tech-icon" title="Visual Studio">
+                    <i class="fab fa-windows"></i>
+                    <span>VS</span>
+                </div>
+                <div class="tech-icon" title="REST APIs">
+                    <i class="fas fa-code"></i>
+                    <span>REST</span>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">ASP.NET Core</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Entity Framework Core</span>
+                        <span class="skill-tag">Fluent API</span>
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">Repository Pattern</span>
+                        <span class="skill-tag">Service Layer</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Architecture & Design</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Clean Architecture</span>
+                        <span class="skill-tag">SOLID Principles</span>
+                        <span class="skill-tag">Design Patterns</span>
+                        <span class="skill-tag">Async/Await</span>
+                        <span class="skill-tag">Multithreading</span>
+                        <span class="skill-tag">Dependency Injection</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Visual Studio</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Serilog</span>
+                        <span class="skill-tag">SQL Server Management</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Presentation</span>
+                        <span class="skill-tag">Analytical Thinking</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">English</span>
+                        <span class="skill-tag">Arabic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Certificates Section with Modals -->
+    <section class="certificates">
+        <div class="container">
+            <h2 class="section-title">Certifications & Achievements</h2>
+            <div class="certificates-grid">
+                <div class="cert-card" data-cert="1">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Meta Back-End Developer Professional Certificate</h3>
+                    <p>Coursera (In Progress)</p>
+                    <p class="cert-time">2025 - Present</p>
+                    <button class="cert-preview-btn">View Details</button>
+                    <!-- No downloadable file for in-progress certificate -->
+                </div>
+
+                <div class="cert-card" data-cert="2">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>CIB Intern Software Developer Certificate</h3>
+                    <p>CIB Egypt</p>
+                    <p class="cert-time">July 2025</p>
+                    <button class="cert-preview-btn">View Certificate</button>
+                </div>
+
+                <div class="cert-card" data-cert="3">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>IELTS Academic Certificate</h3>
+                    <p>British Council</p>
+                    <p class="cert-time">Band 6.5 • July 2023 - July 2025</p>
+                    <button class="cert-preview-btn">View Report</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modals -->
+    <div id="certModal1" class="cert-modal">
+        <div class="cert-modal-content">
+            <span class="cert-close">&times;</span>
+            <h2>Meta Back-End Developer Professional Certificate</h2>
+            <div class="cert-modal-body">
+                <p><strong>Issuer:</strong> Coursera</p>
+                <p><strong>Status:</strong> In Progress</p>
+                <p><strong>Year:</strong> 2025 - Present</p>
+                <p><strong>Description:</strong> Comprehensive professional certificate program covering backend development, server-side programming, and professional certificate training.</p>
+                <p style="margin-top: 1.5rem; color: var(--text-secondary); font-size: 0.9rem;">Certificate will be available upon completion.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="certModal2" class="cert-modal">
+        <div class="cert-modal-content">
+            <span class="cert-close">&times;</span>
+            <h2>CIB Intern Software Developer Certificate</h2>
+            <div class="cert-modal-body">
+                <p><strong>Issuer:</strong> Commercial International Bank (CIB Egypt)</p>
+                <p><strong>Issued:</strong> July 2025</p>
+                <p><strong>Program:</strong> Summer 2025 Internship</p>
+                <p><strong>Description:</strong> Recognition for completing a 2-month internship program as a Software Developer, demonstrating proficiency in C#, ASP.NET Core, and REST API development.</p>
+                <div class="pdf-preview">
+                    <iframe src="Ramy Mahmoud - CIB Summer Internship 2025 Certificate.pdf#zoom=page-width" type="application/pdf"></iframe>
+                </div>
+                <a href="Ramy Mahmoud - CIB Summer Internship 2025 Certificate.pdf" download class="cert-download-btn" target="_blank" rel="noopener">Download Certificate <i class="fas fa-download"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="certModal3" class="cert-modal">
+        <div class="cert-modal-content">
+            <span class="cert-close">&times;</span>
+            <h2>IELTS Academic Certificate</h2>
+            <div class="cert-modal-body">
+                <p><strong>Issuer:</strong> British Council</p>
+                <p><strong>Band Score:</strong> 6.5</p>
+                <p><strong>Issued:</strong> July 2023</p>
+                <p><strong>Expires:</strong> July 2025</p>
+                <p><strong>Description:</strong> International English Language Testing System (IELTS) certification demonstrating advanced English language proficiency.</p>
+                <div class="pdf-preview">
+                    <iframe src="IELTS Report.pdf#zoom=page-width" type="application/pdf"></iframe>
+                </div>
+                <a href="IELTS Report.pdf" download class="cert-download-btn" target="_blank" rel="noopener">Download Certificate <i class="fas fa-download"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume Modal (preview only, no direct download) -->
+    <div id="resumeModal" class="cert-modal">
+        <div class="cert-modal-content">
+            <span class="cert-close">&times;</span>
+            <h2>Resume Preview</h2>
+            <div class="cert-modal-body">
+                <p class="contact-subtitle">Preview of resume (view-only)</p>
+                <div class="pdf-preview">
+                    <iframe src="resume.pdf#zoom=page-width" type="application/pdf"></iframe>
+                </div>
+                <a href="resume.pdf" download class="cert-download-btn" target="_blank" rel="noopener">Download Resume <i class="fas fa-download"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact-subtitle">I'm always open to exciting opportunities and collaborations</p>
+            
+            <div class="contact-methods">
+                <a href="mailto:ramykhairybuisness@gmail.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>ramykhairybuisness@gmail.com</p>
+                </a>
+                
+                <a href="https://github.com/RamyKhairy24" target="_blank" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>github.com/RamyKhairy24</p>
+                </a>
+                
+                <a href="https://linkedin.com/in/ramykhairy" target="_blank" class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/ramykhairy</p>
+                </a>
+                    <a href="https://wa.me/message/XXNFY5P5JNE6H1" target="_blank" rel="noopener" class="contact-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>WhatsApp</h3>
+                        <p>Message me</p>
+                    </a>
+            
+                    <a href="tel:+201515817530" class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+20 151 581 7530</p>
+                    </a>
+            </div>
+
+            <div class="contact-form-container">
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xjgabnzb" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <!-- Honeypot to reduce spam -->
+                    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                    <!-- Optional: custom subject shown in email -->
+                    <input type="hidden" name="_subject" value="Portfolio Contact Form">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Ramy Khairy. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
